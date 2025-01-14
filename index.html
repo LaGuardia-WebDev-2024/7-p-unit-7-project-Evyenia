@@ -13,7 +13,6 @@ Select ONE Additional
 [ no ] Feature 5 - Animate a color change
 -->
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,25 +21,36 @@ Select ONE Additional
     <title>Unit 7 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
-    <style></style>
+    <style>
+        ul {
+        background-color: navy;
+      }
+      h1{font-family: hang;}
+    @font-face {
+        font-family: hang;
+        src: url(https://cdn.glitch.global/6b425631-7106-4ed6-9413-d119039274c7/Hanged%20Letters.ttf?v=1730388138311);}
+      h2{
+        color:pink;
+      }
+    </style>
   </head>
 
   <body>
-    <h1>
-      New Year, New Me
-    </h1>
+    <h1>New Year, New Me</h1>
+    <ul>
+      <li>Get a higher blockblast score</li>
+      <li> Get better at the new version </li>
+      <li>Learn how to multitask while playing </li>
+    </ul>
     <div class="main">
       <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
       <div>
-        <h2>
-          2025 Goals
-        </h2>
+        <h2>2025 Goals</h2>
         <ol>
-          <li>Spend More Time Coding </li>
+        
         </ol>
       </div>
     </div>
-        
   </body>
 </html>
 

@@ -4,7 +4,11 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
+var redSize=20;
+var blueSize=35;
+var blackSize=130;
+var circleSize=20;
+var littleSize=20;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
@@ -17,10 +21,56 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
   
-  fireworkX = fireworkX + 1;
-
+  
+  
+  //red 
+  fill(227, 19, 5);
+strokeWeight(1);
+  rect(245, redSize, 42.5, 42.5);
+  if(redSize<197){
+  redSize = redSize + 1.05;
+  }
+  
+  //blue
+  fill(18, 25, 227);
+strokeWeight(1);
+rect(290.5, blueSize, 42.5, 135);
+  if(blueSize<150){
+  blueSize = blueSize + .70;
+  }
+  
+  //black
+  fill(38, 35, 79);
+strokeWeight(1);
+if(blueSize>150){
+rect(245, blackSize, 89, 290);
+}
+//grid
+fill(39, 40, 77);
+strokeWeight(1);
+  line(248,242,332,242);
+  line(248,198,332,198);
+  line(248,288,332,288);
+   line(248,332,332,332);
+    line(248,378,332,378);
+    line(290,153,290,394);
+    
+    //little circle
+  fill(200,388,160);
+  ellipse(35,49,mouseX,mouseY);
+  
+  
+  if(blackSize<150){
+  blackSize = blackSize + .55;
+  }
+  x=mouseX;
+  y=mouseY;
+  //expanding element 
+  rect(8,8,circleSize,2);
+  circleSize=circleSize+1;
+  littleSize=littleSize+1;
+  
 }
 
 //🟡Extra FUN Features Ms. Hall Added
